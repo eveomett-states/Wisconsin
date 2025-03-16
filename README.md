@@ -34,99 +34,64 @@ And these data retrieved March 14, 2025:
 Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup). 
 
 ## Metadata
-- `CNTY_FIPS20`
-- `CNTY_NAME10`
-- `MCD_FIPS20`
-- `MCD_NAME20`
-- `CTV20`
-- `WARDID20`
-- `LABEL20`
-- `PERSONS20`
-- `RV20`
-* `STATE`: State
-* `STATEFP`: State FIPS code
-* `COUNTYFP20`: County FIPS code
-* `Precinct`: Precinct (ward)
-* `Code`: Precinct code
-* `Code-2`: Precinct code (2)
-* `GOV18D`: Number of votes for 2018 Democratic gubernatorial candidate
-* `GOV18R`: Number of votes for 2018 Republican gubernatorial candidate
-* `SOS18D`: Number of votes for 2018 Democratic secretary of state candidate
-* `SOS18R`: Number of votes for 2018 Republican secretary of state candidate
-* `TRE18D`: Number of votes for 2018 Democratic treasurer candidate
-* `TRE18R`: Number of votes for 2018 Republican treasurer candidate
-* `USH18D`: Number of votes for 2018 Democratic US house candidate
-* `USH18R`: Number of votes for 2018 Republican US house candidate
-* `SEN18D`: Number of votes for 2018 Democratic senate candidate
-* `SEN18R`: Number of votes for 2018 Republican senate candidate
-* `AG18D`: Number of votes for 2018 Democratic attorney general candidate
-* `AG18R`: Number of votes for 2018 Republican attorney general candidate
-* `SH18D`: Number of votes for 2018 Democratic state house candidate
-* `SH18R`: Number of votes for 2018 Republican state house candidate
-* `SSEN18D`: Number of votes for 2018 Democratic state senate candidate
-* `SSEN18R`: Number of votes for 2018 Republican state senate candidate
-* `PRES16D`: Number of votes for 2016 Democratic presidential candidate
-* `PRES16R`: Number of votes for 2016 Republican presidential candidate
-* `USH16D`: Number of votes for 2016 Democratic US house candidate
-* `USH16R`: Number of votes for 2016 Republican US house candidate
-* `SEN16D`: Number of votes for 2016 Democratic senate candidate
-* `SEN16R`: Number of votes for 2016 Republican senate candidate
-* `SH16D`: Number of votes for 2016 Democratic state house candidate
-* `SH16R`: Number of votes for 2016 Republican state house candidate
-* `SSEN16D`: Number of votes for 2016 Democratic state senate candidate
-* `SSEN16R`: Number of votes for 2016 Republican state senate candidate
-* `GOV14D`: Number of votes for 2014 Democratic gubernatorial candidate
-* `GOV14R`: Number of votes for 2014 Republican gubernatorial candidate
-* `SOS14D`: Number of votes for 2014 Democratic secretary of state candidate
-* `SOS14R`: Number of votes for 2014 Republican secretary of state candidate
-* `TRE14D`: Number of votes for 2014 Democratic treasurer candidate
-* `TRE14R`: Number of votes for 2014 Republican treasurer candidate
-* `USH14D`: Number of votes for 2014 Democratic US house candidate
-* `USH14R`: Number of votes for 2014 Republican US house candidate
-* `AG14D`: Number of votes for 2014 Democratic attorney general candidate
-* `AG14R`: Number of votes for 2014 Republican attorney general candidate
-* `SH14D`: Number of votes for 2014 Democratic state house candidate
-* `SH14R`: Number of votes for 2014 Republican state house candidate
-* `SSEN14D`: Number of votes for 2014 Democratic state senate candidate
-* `SSEN14R`: Number of votes for 2014 Republican state senate candidate
-* `GOV12D`: Number of votes for 2012 Democratic gubernatorial candidate
-* `GOV12R`: Number of votes for 2012 Republican gubernatorial candidate
-* `PRES12D`: Number of votes for 2012 Democratic presidential candidate
-* `PRES12R`: Number of votes for 2012 Republican presidential candidate
-* `USH12D`: Number of votes for 2012 Democratic US house candidate
-* `USH12R`: Number of votes for 2012 Republican US house candidate
-* `SEN12D`: Number of votes for 2012 Democratic senate candidate
-* `SEN12R`: Number of votes for 2012 Republican senate candidate
-* `SH12D`: Number of votes for 2012 Democratic state house candidate
-* `SH12R`: Number of votes for 2012 Republican state house candidate
-* `SSEN12D`: Number of votes for 2012 Democratic state senate candidate
-* `SSEN12R`: Number of votes for 2012 Republican state senate candidate
-* `TOTPOP`: Total population from 2010 Decennial Census
-* `NH_WHITE`: White, non-hispanic, population from 2010 Decennial Census
-* `NH_BLACK`: Black, non-hispanic, population from 2010 Decennial Census
-* `NH_AMIN`: American Indian and Alaska Native, non-hispanic, population from 2010 Decennial Census
-* `NH_ASIAN`: Asian, non-hispanic, population from 2010 Decennial Census
-* `NH_NHPI`: Native Hawaiian and Pacific Islander, non-hispanic, population from 2010 Decennial Census
-* `NH_OTHER`: Other race, non-hispanic, population from 2010 Decennial Census
-* `NH_2MORE`: Two or more races, non-hispanic, population from 2010 Decennial Census
-* `HISP`: Hispanic population from 2010 Decennial Census
-* `H_WHITE`: White, hispanic, population from 2010 Decennial Census
-* `H_BLACK`: Black, hispanic, population from 2010 Decennial Census
-* `H_AMIN`: American Indian and Alaska Native, hispanic, population from 2010 Decennial Census
-* `H_ASIAN`: Asian, hispanic, population from 2010 Decennial Census
-* `H_NHPI`: Native Hawaiian and Pacific Islander, hispanic, population from 2010 Decennial Census
-* `H_OTHER`: Other race, hispanic, population from 2010 Decennial Census
-* `H_2MORE`: Two or more races, hispanic, population from 2010 Decennial Census
-* `VAP`: Total voting age population from 2010 Decennial Census
-* `HVAP`: Hispanic voting age population from 2010 Decennial Census
-* `WVAP`: White, non-hispanic, voting age population from 2010 Decennial Census
-* `BVAP`: Black, non-hispanic, voting age population from 2010 Decennial Census
-* `AMINVAP`: American Indian and Alaska Native, non-hispanic, voting age population from 2010 Decennial Census
-* `ASIANVAP`: Asian, non-hispanic, voting age population from 2010 Decennial Census
-* `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population from 2010 Decennial Census
-* `OTHERVAP`: Other race, non-hispanic, voting age population from 2010 Decennial Census
-* `2MOREVAP`: Two or more races, non-hispanic, voting age population from 2010 Decennial Census
-* `HDIST`: State House district
-* `SEND`: State Senate distict
-* `CD`: Congressional district
-
+- `CNTY_FIPS20`: County FIPS code
+- `CNTY_NAME20`: County name
+- `MCD_FIPS20`: Minor Civil Division FIPS code
+- `MCD_NAME20`: Minor Civil Division name
+- `CTV20`: City, Town, or Village code
+- `WARDID20`: Ward ID
+- `LABEL20`: City label, with CTV code, and ID
+- `PERSONS20`: Population (from 2020 election data file)
+- `RV20`: Registered Voters (from 2020 election data file)
+- `CD`: Congressional district ID in 2022 enacted congressional map
+- `SEND`: State Senate district for 2023 approved State Senate Plan
+- `HDIST`: State House district for 2023 approved State House of Representatives Districts Plan
+- `TOTPOP`: Total population in 2020 Census
+- `NH_WHITE`: White, non-hispanic, population in 2020 Census
+- `NH_BLACK`: Black, non-hispanic, population in 2020 Census
+- `NH_AMIN`: American Indian and Alaska Native, non-hispanic, population in 2020 Census
+- `NH_ASIAN`: Asian, non-hispanic, population in 2020 Census
+- `NH_NHPI`: Native Hawaiian and Pacific Islander, non-hispanic, population in 2020 Census
+- `NH_OTHER`: Other race, non-hispanic, population in 2020 Census
+- `NH_2MORE`: Two or more races, non-hispanic, population in 2020 Census
+- `HISP`: Hispanic population in 2020 Census
+- `H_WHITE`: White, hispanic, population in 2020 Census
+- `H_BLACK`: Black, hispanic, population in 2020 Census
+- `H_AMIN`: American Indian and Alaska Native, hispanic, population in 2020 Census
+- `H_ASIAN`: Asian, hispanic, population in 2020 Census
+- `H_NHPI`: Native Hawaiian and Pacific Islander, hispanic, population in 2020 Census
+- `H_OTHER`: Other race, hispanic, population in 2020 Census
+- `H_2MORE`: Two or more races, hispanic, population in 2020 Census
+- `VAP`: Total voting age population in 2020 Census
+- `HVAP`: Hispanic voting age population in 2020 Census
+- `WVAP`: White, non-hispanic, voting age population in 2020 Census
+- `BVAP`: Black, non-hispanic, voting age population in 2020 Census
+- `AMINVAP`: American Indian and Alaska Native, non-hispanic, voting age population in 2020 Census
+- `ASIANVAP`: Asian, non-hispanic, voting age population in 2020 Census
+- `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population in 2020 Census
+- `OTHERVAP`: Other race, non-hispanic, voting age population in 2020 Census
+- `2MOREVAP`: Two or more races, non-hispanic, voting age population in 2020 Census
+- `ATG18D`: Number of votes for 2018 Democratic Attorney General candidate
+- `ATG18R`: Number of votes for 2018 Republican Attorney General candidate
+- `ATG18O`: Number of votes for 2018 other party's Attorney General candidate
+- `GOV18D`: Number of votes for 2018 Democratic Gubernatorial candidate
+- `GOV18R`: Number of votes for 2018 Republican Gubernatorial candidate
+- `GOV18O`: Number of votes for 2018 other party's Gubernatorial candidate
+- `PRE16D`: Number of votes for 2016 Democratic Presidential candidate
+- `PRE16O`: Number of votes for 2016 other party's Presidential candidate
+- `PRE16R`: Number of votes for 2016 Republican Presidential candidate
+- `PRE20D`: Number of votes for 2020 Democratic Presidential candidate
+- `PRE20R`: Number of votes for 2020 Republican Presidential candidate
+- `PRE20O`: Number of votes for 2020 other party's Presidential candidate
+- `SOS18D`: Number of votes for 2018 Democratic Secretary of State candidate
+- `SOS18R`: Number of votes for 2018 Republican Secretary of State candidate
+- `SOS18O`: Number of votes for 2018 other party's Secretary of State candidate
+- `TRE18D`: Number of votes for 2018 Democratic Treasurer candidate
+- `TRE18R`: Number of votes for 2018 Republican Treasurer candidate
+- `TRE18O`: Number of votes for 2018 other party's Treasurer candidate
+- `USS16D`: Number of votes for 2016 Democratic senate candidate
+- `USS16R`: Number of votes for 2016 Republican senate candidate
+- `USS16O`: Number of votes for 2016 other party's senate candidate
+- `USS18D`: Number of votes for 2018 Democratic senate candidate
+- `USS18R`: Number of votes for 2018 Republican senate candidate
+- `USS18O`: Number of votes for 2018 other party's senate candidate
