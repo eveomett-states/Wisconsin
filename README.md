@@ -1,6 +1,11 @@
+# License
+This data was generated using data from the Redistricting Data Hub.  Any use of this project shall also comply with restrictions on use of data and attribution requirements set forth in the Redistricting Data Hub terms and conditions found at: [https://redistrictingdatahub.org/terms-and-conditions/](https://redistrictingdatahub.org/terms-and-conditions/).
+
+Use of this project is further governed by the terms of the [Creative Commons Attribution Noncommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
+
 # Wisconsin
 
-This shapefile was processed by Professor Ellen Veomett and her student Ananya Agarwal.
+This shapefile was processed by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook.  As part of the cleaning process, precincts were nested within counties and small rook adjacencies (under 30.5 m) were changed to queen adjacencies.
 
 # **Sources**
 @author: eveomett AI for Redistricting, USF All data retrieved 05/29/24:
@@ -11,23 +16,36 @@ Obtain the following data from Restricting Data Hub
 
 [Congressional District data](https://redistrictingdatahub.org/dataset/2022-wisconsin-congressional-districts-approved-plan/): 2022 wisconsin Congressional Districts plan enacted on 2/27/23
 
-[State House District data](https://redistrictingdatahub.org/dataset/2022-wisconsin-assembly-districts-approved-plan/): 2022 State House Approved Plan
-
-[State Senate District data](https://redistrictingdatahub.org/dataset/2022-wisconsin-senate-districts-approved-plan-2/): 2022 State Senate Approved Plan
-
 [2020 election data](https://redistrictingdatahub.org/dataset/vest-2020-wisconsin-precinct-and-election-results/)**:**  VEST 2020 wisconsin precinct and election results
 
 [2018 election data](https://redistrictingdatahub.org/dataset/vest-2018-wisconsin-precinct-and-election-results/)**:**  VEST 2018 wisconsin precinct and election results
 
 [2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-wisconsin-precinct-and-election-results/)**:**  VEST 2016 wisconsin precinct and election results
 
+And these data retrieved March 14, 2025:
+
+[State House District data](https://redistrictingdatahub.org/dataset/2023-wisconsin-assembly-districts-plan-state-legislative-district-lower-sldl/): 2023 Wisconsin Assembly Districts Plan
+
+[State Senate District data](https://redistrictingdatahub.org/dataset/2023-wisconsin-senate-districts-plan-state-legislative-district-upper-sldu/): State Senate Districts Plan Approved 2023
+
+[2020 County Data](https://redistrictingdatahub.org/dataset/wisconsin-county-pl-94171-2020/): from 2020 Census Redistricting Data (P.L. 94-171) Shapefiles
+
 ## Preprocessing
-Demographic data were aggregated from the block level using MGGG’s proration software [maup](https://github.com/mggg/maup). Congressional, house, and senate district IDs were assigned to precincts also using this package.
+Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup). 
 
 ## Metadata
+- `CNTY_FIPS20`
+- `CNTY_NAME10`
+- `MCD_FIPS20`
+- `MCD_NAME20`
+- `CTV20`
+- `WARDID20`
+- `LABEL20`
+- `PERSONS20`
+- `RV20`
 * `STATE`: State
 * `STATEFP`: State FIPS code
-* `COUNTYFP`: County FIPS code
+* `COUNTYFP20`: County FIPS code
 * `Precinct`: Precinct (ward)
 * `Code`: Precinct code
 * `Code-2`: Precinct code (2)
