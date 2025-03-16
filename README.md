@@ -130,5 +130,3 @@ Data were cleaned and aggregated in the corresponding jupyter notebook using MGG
 * `SEND`: State Senate distict
 * `CD`: Congressional district
 
-## Projection
-The shapefiles use a NAD83 UTM zone 16 N (or EPSG:26916) projection.
